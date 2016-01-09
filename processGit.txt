@@ -1,0 +1,14 @@
+1. open an account in www.github.com
+2. generate ssh-keys "($ssh-keygen)"
+    --> ssh keys are used for password-less authentication and for secure connection.
+    --> ssh keys there are private & public keys, private key will be with us in our
+           system and public key is copied to all the systems to which we need to connect.
+    --> the default folder for ssh keys is in login(user) directory .ssh, there are two types 
+            of ssh key algorithms i.e. RSA & DSA
+3. push id_rsa.pub to github account (publickey)
+4. install git on our local machine "($apt-get install git)"
+5. configure our git account locally "($git config --global user.email)"
+6. clone our existing repo "($git clone url)"
+7. add our first file to github.("$git status","$git add -A","$git commit -m "****" ",
+                                 "$git push origin master","$git pull url")  
+

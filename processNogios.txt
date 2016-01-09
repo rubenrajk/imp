@@ -1,0 +1,8 @@
+1. Nagios3 installation
+2. url=http://ip-address/nagios3
+       login: nagiosadmin
+       passwd: installation time passwd
+3. nagios.cfg and conf.d
+4. define host
+5. restart service
+

@@ -1,0 +1,9 @@
+1. Attach Hard Disk 
+2. Format With lvm (fdisk /dev/sd* --> doing partions on sd*)
+3. pv create --> #pvcreate /dev/sd* (command followed by path)
+4. vg create --> #vgcreate vg-name /dev/sd* (command followed by vgname & path)
+5. lv create --> #lvcreate -L 512 -n lv-name vg-name /dev/sd* (command followed by ram size,lvname,vgname & path)
+6. make file system --> #mkfs.ext4 /dev/vg-name/lv-name (command followed by path) 
+7.mounting --> #mount /dev/vg-name/lv-name /directory/.* (command followed by path & any directory mount point)
+8.lvextend -L totalsize
+9.resize2fs
